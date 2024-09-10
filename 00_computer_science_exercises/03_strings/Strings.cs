@@ -22,5 +22,31 @@ class Strings {
     // Useful String Methods
     Console.WriteLine(greeting.ToUpper()); // MAKE THE ENTIRE STRING UPPERCASE
     Console.WriteLine(greeting.ToLower()); // make the entire string lowercase
+
+  
+    // String Concatenation "Con-Cat-Uh-Nation"
+    string comboString = greeting + goodbye;
+    Console.WriteLine(comboString);
+
+    // String Concatenation Method #2
+    string comboString2 = string.Concat(greeting, goodbye);
+    Console.WriteLine(comboString2);
+
+    // String Interpolation -- Subsituting variables into strings.
+    string comboString3 = $"My greeting is {greeting} and my goodbye is {goodbye}\n";
+    Console.WriteLine(comboString3);
+
+    // Subsituting Variables into Strings Method 2
+    Console.WriteLine("My greeting is " + greeting + "and my goodbye is " + goodbye + "\n");
+
+    // Accessing Parts of Strings
+    // Index is a specific location of a character in a string
+    // All strings indexes start at 0
+    Console.WriteLine(goodbye[0]); // Print the character at index 0.
+    Console.WriteLine(goodbye[4]); // Replace x with what to print the 5th char?
+    
+    // Where is it in my string?
+    Console.WriteLine(greeting.IndexOf("y"));
+    
   }
 }
