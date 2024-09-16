@@ -12,5 +12,46 @@ class RockPaperScissors
         // Welcome message and game objective
         Console.WriteLine("Welcome to Rock, Paper, Scissors!");
         Console.WriteLine("First to 5 points wins!");
+
+        // Loop until either the user or the computer reaches 5 points
+        while (userScore < 5 && computerScore < 5)
+        {
+            // Prompt the user for their choice
+            Console.WriteLine("\nEnter your choice: Rock, Paper, or Scissors:");
+            string userChoice = Console.ReadLine().ToUpper(); // Convert user input to uppercase for easier comparison
+
+            // Validate user input (ensure they entered Rock, Paper, or Scissors)
+            while (userChoice != "ROCK" && userChoice != "PAPER" && userChoice != "SCISSORS")
+            {
+                Console.WriteLine("Invalid choice. Please choose Rock, Paper, or Scissors:");
+                userChoice = Console.ReadLine().ToUpper(); // Keep asking until a valid choice is entered
+            }
+
+            // Generate the computer's choice using a random selection
+            string computerChoice = GetComputerChoice(random);
+            Console.WriteLine($"Computer chose: {computerChoice}");
+
+            // Determine the winner of the round (Player, Computer, or Tie)
+            string result = DetermineWinner(userChoice, computerChoice);
+
+            // Update scores based on the round result
+            if (result == "Player")
+            {
+                userScore++; // Increment user score if player wins
+                Console.WriteLine("You win this round!");
+            }
+            else if (result == "Computer")
+            {
+                computerScore++; // Increment computer score if computer wins
+                Console.WriteLine("Computer wins this round!");
+            }
+            else
+            {
+                Console.WriteLine("It's a tie! No points awarded.");
+            }
+
+            // Display the current score after each round (Just a little easter egg this work was done by Kenedy Davis)
+            Console.WriteLine($"\nScore: You: {userScore} | Computer: {computerScore}");
+        }
     }
 }
