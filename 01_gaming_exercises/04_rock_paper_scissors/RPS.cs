@@ -29,7 +29,7 @@ class RockPaperScissors
 
             // Generate the computer's choice using a random selection
             string computerChoice = GetComputerChoice(random);
-            Console.WriteLine($"Computer chose: {computerChoice}");
+            Console.WriteLine("Computer chose: {computerChoice}");
 
             // Determine the winner of the round (Player, Computer, or Tie)
             string result = DetermineWinner(userChoice, computerChoice);
@@ -51,7 +51,7 @@ class RockPaperScissors
             }
 
             // Display the current score after each round (Just a little easter egg this work was done by Kenedy Davis)
-            Console.WriteLine($"\nScore: You: {userScore} | Computer: {computerScore}");
+            Console.WriteLine("\nScore: You: {userScore} | Computer: {computerScore}");
         }
 
         // Declare the final winner based on who reached 5 points first
@@ -89,9 +89,7 @@ class RockPaperScissors
         }
         else
         {
-            return "Computer"; // Computer wins
+            return "Computer"; // Computer wins (Sadly)
         }
-    }
-}
     }
 }
