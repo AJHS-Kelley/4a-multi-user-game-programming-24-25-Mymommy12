@@ -47,6 +47,18 @@ class Strings {
     
     // Where is it in my string?
     Console.WriteLine(greeting.IndexOf("y"));
+
+    // Finding parts of a string
+    string fullName = "TF2 Sniper"
+
+    // What Letter?
+    int lastInitial = fullname.IndexOf("S");
+
+    // Find the substring.
+    string lastname = fullName.Substring(lastInital);
+
+    // Print it.
+    Console.WriteLine(lastName);
     
   }
 }
