@@ -20,5 +20,10 @@ class 04_Collections {
   string[] breakfastfoods = {"Pancakes","bacon","Scrambled Eggs", "Cereal", "Water"};
   int[] testscores = {"F","F","F","F","F"};
   double[] GPA = {"0.16","2.7","9001","6.9","6.3"};
+
+  // Print Array Contents -- All elements on Single Lie
+  Console.WriteLine('The elements of each array are\n.');
+  Console.WriteLine("breakFastFoods: \n"= + String.Join(" , ", breakfastfoods));
+  Console.WriteLine(); // Print an empty line to the screen.
   }
 }
