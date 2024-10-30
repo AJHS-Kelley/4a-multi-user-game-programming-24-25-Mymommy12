@@ -34,5 +34,10 @@ class Collections {
   // How long is my array? Determining array length
   Console.WriteLine("The length of the breakFastFoods array is: " + breakfastfoods.Length);
   // .Length is known as Property of the array.
+
+  // Acessing elements in the array with the index.
+  Console.WriteLine("The first element in breakFastFoods is: " + breakfastfoods[0]);
+  // Print the 2nd element of the testScores array.
+  // Print the 3rd element of the GPA array.
   }
 }
