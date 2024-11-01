@@ -58,6 +58,20 @@ class Collections {
 // testScores[0] = "99"; // Error Message "Cannot implicityly convert dataType to DataType"
 // Trying to put Incorrect data type into the array.
 
+// Common array methods -- Ways to work with the array data.
+// Sorting an array
+int[] intArr = {546157614657167871468416476807861674616714067147607168718741671074167, 3, 34424, 16, 12, 34, 17, 832, 6, 3};
+string[] zooAnimals = {"Monkey", "Zebra", "Giraffe", "Nigger", "Elephant", "Tiger", "Lion", "Crocodile", "Flamingo"};
+
+Array.Sort (intArr);
+Array.Sort (zooAnimals);
+// Array.Sort will sort string arrays ALPHABETICALLY
+
+   // Finding the Min, Max, and Sum for numerical arrays.
+   Console.WriteLine("The MINIMUM value for the intArr is: " + intArr.MIN());
+   Console.WriteLine("The MAXIMUM value for the intArr is: " + intArr.MAX());
+   Console.WriteLine("The SUM value for the intArr is: " + intArr.SUM());
+
   }// Dont Be a dumbass
 }// Or a Dumbfuck
 /* or a fucking dum
