@@ -13,12 +13,12 @@ class Collections {
   -- Contents of each element can change.
   -- Arrays are ordered, Meaning each item has a fixed position.
   -- Position of the element is the index
-  -- First element Index is 0.
+  -- First element Index is 0. 
   */
 
   // Declaring and defining an array
   string[] breakfastfoods = {"Pancakes","bacon","Scrambled Eggs", "Cereal", "Water"};
-  double[] testscores = {0.1,100,27,64,34};
+  double[] testScores = {0.1,100,27,64,34};
   double[] GPA = {0.16,2.7,9001,6.9,6.3};
 
   // Print Array Contents -- All elements on Single Lie
@@ -39,5 +39,36 @@ class Collections {
   Console.WriteLine("The first element in breakFastFoods is: " + breakfastfoods[0]);
   // Print the 2nd element of the testScores array.
   // Print the 3rd element of the GPA array.
-  }
-}
+
+  // Shortcut to acess last item in an array
+  Console.WriteLine("The last element of breakfastfoods is: " + breakfastfoods[breakfastfoods.length - 1]);
+  Console.WriteLine("The last element of testScores is " + testScores[testScores.length -1]);
+
+  //Changing elements in the array
+  breakfastfoods[2] = "bacon";
+  testScores[0] = 100;
+  GPA[1] = 2.7;
+  Console.WriteLine("The elements of each array are\n.");
+  Console.WriteLine("breakFastFoods: \n" + String.Join("\n", breakfastfoods));
+  Console.WriteLine(); // Print an empty line to the screen.
+
+// Common errors with arrays
+// Console.WriteLine(breakFastFoods[99]); // Index Out of Bounds -- Acessing index that does not exist in the array.
+
+// testScores[0] = "99"; // Error Message "Cannot implicityly convert dataType to DataType"
+// Trying to put Incorrect data type into the array.
+
+  }// Dont Be a dumbass
+}// Or a Dumbfuck
+/* or a fucking dum
+or a dum dum
+or a assdumb
+or a moron
+or a dumbhead
+or a retard
+or a faggot
+or a mindless bozo
+or a fucking moron
+or a shit head
+or a dumb mother fucker
+*/
